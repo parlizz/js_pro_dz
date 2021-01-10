@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamburger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form name="" action="" id="form">
+    <fieldset>
+        <legend>Создай свой гамбургер</legend>
+        <div class="row">
+            <p>Выбери размер</p>
+            <div class="radio-variant">
+                <input type="radio" name="size" id="small" value="small" checked/>
+                <label for="small">Маленький (50 рублей, 20 калорий)</label>
+            </div>
+            <div class="radio-variant">
+                <input type="radio" name="size" id="large" value="large" />
+                <label for="large">Большой (100 рублей, 40 калорий)</label>
+            </div>
+        </div>
+        <div class="row additions">
+            <p>Виды начинок:</p>
+            <div class="checkbox-variant">
+                <input type="radio" name="add" id="cheese" value="cheese" checked/>
+                <label for="cheese">С сыром (+10 рублей, +20 калорий)</label>
+            </div>
+            <div class="checkbox-variant">
+                <input type="radio" name="add" id="salad" value="salad"/>
+                <label for="salad">С салатом (+20 рублей, +5 калорий)</label>
+            </div>
+            <div class="checkbox-variant">
+                <input type="radio" name="add" id="potato" value="potato"/>
+                <label for="potato">С картофелем (+15 рублей, +10 калорий)</label>
+            </div>
+            <div class="checkbox-variant">
+                <input type="checkbox" name="add" id="onion" value="onion"/>
+                <label for="onion">Посыпать приправой (15 рублей, 0 калорий)</label>
+            </div>
+            <div class="checkbox-variant">
+                <input type="checkbox" name="add" id="mayonez" value="ketchup"/>
+                <label for="mayonez">Полить майонезом (20 рублей, 5 калорий)</label>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Собрать бургер" />
+        </div>
+    </fieldset>
+    <br />
+    <div id="result">
+        <div><b>Стоимость:</b> <span id="price">0</span></div>
+        <div><b>Калорийность:</b> <span id="calories">0</span></div>
+    </div>
+</form>
+    <script src="js.js"></script>
+</body>
+</html>
